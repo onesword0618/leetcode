@@ -1,0 +1,25 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "leetcodeで利用したコードを置いておく。",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onesword0618/leetcode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/onesword0618/leetcode/issues"
+  },
+  "homepage": "https://github.com/onesword0618/leetcode#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
