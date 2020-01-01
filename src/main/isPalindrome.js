@@ -13,7 +13,7 @@ const isPalindrome = function (number) {
 
     while (j > 0) {
         revNumber = (revNumber * 10) + (j % 10);
-        j = ~~(j / 10);
+        j = ~~(j / 10); // bit
     }
 
     return number === revNumber;

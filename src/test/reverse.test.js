@@ -1,16 +1,16 @@
 const reverse = require('./../main/reverse');
 
-describe('与えられた値を反転する', () => {
+describe('与えられた値が反転して返却される', () => {
 
-    test('123を321へ反転する', () => {
-        expect(reverse(123)).toStrictEqual(321);
+    test('123が321へ反転する', () => {
+        expect(reverse(123)).toEqual(321);
     });
 
-    test('-123を-321へ反転する', () => {
-        expect(reverse(-123)).toStrictEqual(-321);
+    test('-123が-321へ反転する', () => {
+        expect(reverse(-123)).toEqual(-321);
     });
 
-    test('120を21へ反転する',() => {
-        expect(reverse(120)).toStrictEqual(21);
+    test('120が21へ反転する',() => {
+        expect(reverse(120)).toEqual(21);
     });
 });
