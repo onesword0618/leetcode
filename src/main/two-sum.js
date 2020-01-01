@@ -8,8 +8,8 @@ const twoSum = function (nums, target) {
     for (let i = 0; i < nums.length; i++) {
         if (compare[nums[i]] >= 0) {
             return [compare[nums[i]], i];
-        }
+        };
         compare[target - nums[i]] = i;
-    }
+    };
 };
 module.exports = twoSum;
