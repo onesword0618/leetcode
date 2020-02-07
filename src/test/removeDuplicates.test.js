@@ -1,8 +1,8 @@
 const removeDuplicates = require('./../main/removeDuplicates');
 
-describe('与えられた文字列で隣り合った同じ文字は取り除く。最終的に同じ文字がなくなる。', () => {
+describe('test概要', () => {
 
-    test('abbacaを引数にしてcaを返却する。', () => {
+    test('テストコメントと期待', () => {
         expect(removeDuplicates('abbaca')).toBe('ca');
     });
 });
