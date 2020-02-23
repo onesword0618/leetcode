@@ -6,18 +6,26 @@ const isValid = function(str) {
 
     if (str === null || str.length <= 0) {
         return true;
-    }
+    };
 
     const brackets = str.split('');
     let stack = [];
+
     for (let bracket of brackets) {
+
         if (bracket === '[') {
             stack.push(']');
-        } else if (bracket === '{') {
+        };
+
+        if (bracket === '{') {
             stack.push('}');
-        } else if (bracket === '(') {
+        };
+
+        if (bracket === '(') {
             stack.push(')');
-        } else if (stack.length === 0 || bracket !== stack.pop()) {
+        };
+
+        if (stack.length === 0 || bracket !== stack.pop()) {
             return false;
         };
     };
