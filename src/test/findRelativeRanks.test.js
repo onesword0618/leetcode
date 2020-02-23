@@ -7,7 +7,6 @@ const findRelativeRanks = require('./../main/findRelativeRanks');
 //      1. N is a positive integer and won't exceed 10,000.
 //      2. All the scores of athletes are guaranteed to be unique.
 
-
 describe('渡された数字の配列からトップから3つの要素をGold Medal,Silver Medal,Bronze Medalに置換することができる', () => {
 
     describe('findRelativeRanks が成功するとき', () => {

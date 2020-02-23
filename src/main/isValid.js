@@ -2,14 +2,15 @@
  * @param {string} str
  * @return {boolean}
  */
-const isValid = function (str) {
+const isValid = function(str) {
 
     if (str === null || str.length <= 0) {
         return true;
-    }
+    };
 
     let brackets = str.split('');
     let stack = [];
+
     for (let bracket of brackets) {
         if (bracket === '[') {
             stack.push(']');

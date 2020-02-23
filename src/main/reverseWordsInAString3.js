@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {string}
  */
-const reverseWords = function (s) {
+const reverseWordsInAString3 = function (s) {
     let str = s.split(' ');
 
     for (let index = 0; index < str.length; index++) {
