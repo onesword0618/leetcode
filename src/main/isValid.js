@@ -8,24 +8,17 @@ const isValid = function(str) {
         return true;
     };
 
-    const brackets = str.split('');
+    let brackets = str.split('');
     let stack = [];
 
     for (let bracket of brackets) {
-
         if (bracket === '[') {
             stack.push(']');
-        };
-
-        if (bracket === '{') {
+        } else if (bracket === '{') {
             stack.push('}');
-        };
-
-        if (bracket === '(') {
+        } else if (bracket === '(') {
             stack.push(')');
-        };
-
-        if (stack.length === 0 || bracket !== stack.pop()) {
+        } else if (stack.length === 0 || bracket !== stack.pop()) {
             return false;
         };
     };
