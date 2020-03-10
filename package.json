@@ -1,5 +1,4 @@
 {
-<<<<<<< Updated upstream
     "name": "leetcode",
     "version": "1.0.0",
     "description": "leetcodeで利用したコードを置いておく。",
@@ -26,30 +25,4 @@
         "jest": "^24.9.0"
     },
     "dependencies": {}
-=======
-  "name": "leetcode",
-  "version": "1.0.0",
-  "description": "leetcodeで利用したコードを置いておく。",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
-  "scripts": {
-    "test": "jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/onesword0618/leetcode.git"
-  },
-  "author": "onesword0618",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/onesword0618/leetcode/issues"
-  },
-  "homepage": "https://github.com/onesword0618/leetcode#readme",
-  "devDependencies": {
-    "jest": "^24.9.0"
-  },
-  "dependencies": {}
->>>>>>> Stashed changes
 }
