@@ -23,5 +23,7 @@
     "devDependencies": {
         "jest": "^25.1.0"
     },
-    "dependencies": {}
+    "dependencies": {
+        "minimist": "^1.2.5"
+    }
 }
