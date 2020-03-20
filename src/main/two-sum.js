@@ -3,7 +3,7 @@
  * @param {number} target
  * @return {number[]}
  */
-const twoSum = function(nums, target) {
+module.exports = (nums, target) => {
     const compare = {};
     const length = nums.length;
 
@@ -14,4 +14,3 @@ const twoSum = function(nums, target) {
         compare[target - nums[index]] = index;
     };
 };
-module.exports = twoSum;

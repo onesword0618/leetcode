@@ -1,16 +1,21 @@
-const reverse = require('./../main/reverse');
+const reverse = require('./../main/reverse.js');
+//   Question
+//      Given a 32-bit signed integer, reverse digits of an integer.
 
-describe('与えられた値が反転して返却される', () => {
+describe('32ビッドの符号付き整数を逆桁にして返却する', () => {
 
-    test('123が321へ反転する', () => {
-        expect(reverse(123)).toEqual(321);
-    });
+    describe('reverse(number)が実行されたとき', () => {
 
-    test('-123が-321へ反転する', () => {
-        expect(reverse(-123)).toEqual(-321);
-    });
+        test('number=123の場合、321が返却されること', () => {
+            expect(reverse(123)).toEqual(321);
+        });
 
-    test('120が21へ反転する',() => {
-        expect(reverse(120)).toEqual(21);
+        test('number=-123の場合、-321が返却されること', () => {
+            expect(reverse(-123)).toEqual(-321);
+        });
+
+        test('number=120の場合、21が返却されること', () => {
+            expect(reverse(120)).toEqual(21);
+        });
     });
 });
