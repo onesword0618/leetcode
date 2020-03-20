@@ -3,13 +3,14 @@
  * @param {number} target
  * @return {number[]}
  */
-const twoSum = function (nums, target) {
+module.exports = (nums, target) => {
     const compare = {};
-    for (let i = 0; i < nums.length; i++) {
-        if (compare[nums[i]] >= 0) {
-            return [compare[nums[i]], i];
+    const length = nums.length;
+
+    for (let index = 0; index < length; index++) {
+        if (compare[nums[index]] >= 0) {
+            return [compare[nums[index]], index];
         };
-        compare[target - nums[i]] = i;
+        compare[target - nums[index]] = index;
     };
 };
-module.exports = twoSum;
