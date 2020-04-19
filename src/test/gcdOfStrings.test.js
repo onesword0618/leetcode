@@ -8,7 +8,7 @@ describe('第一引数に対して第二引数で複製できる文字列を返�
     describe('gcdOfStrings(string str1 string str2) を実行するとき', () => {
 
         test('str1 = ABCABC , str2 = ABCを入力してABCが返却されること', () => {
-            expect(gcdOfStrings('ABCAC', 'ABC')).toBe('ABC');
+            expect(gcdOfStrings('ABCABC', 'ABC')).toBe('ABC');
         });
 
         test('str1 = ABABAB , str2 = ABABを入力してABが返却されること', () => {
