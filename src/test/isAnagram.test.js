@@ -10,7 +10,7 @@ describe('引数がアナグラムかどうかを判定して返却する', () =
             expect(isAnagram('anagram', 'nagaram')).toBeTruthy();
         });
 
-        test('s = rat, t =carを入力して真が返却すること', () => {
+        test('s = rat, t =carを入力して偽が返却すること', () => {
             expect(isAnagram('rat', 'car')).toBeFalsy();
         });
     });
