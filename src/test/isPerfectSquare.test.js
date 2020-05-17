@@ -5,11 +5,11 @@ const isPerfectSquare = require('./../main/isPerfectSquare.js');
 describe('引数で渡した値が正四角型かどうか判断して返却する', () => {
 
     describe('isPerfectSquare(number num)  を実行するとき', () => {
-        test('num =16 を入力して真が返却すること', () => {
+        test('num =16 を入力して真を返却すること', () => {
             expect(isPerfectSquare(16)).toBeTruthy();
         });
 
-        test('num =14 を入力して偽が返却すること', () => {
+        test('num =14 を入力して偽を返却すること', () => {
             expect(isPerfectSquare(14)).toBeFalsy();
         });
     });
