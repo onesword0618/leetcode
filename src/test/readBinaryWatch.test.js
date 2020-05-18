@@ -5,7 +5,7 @@ const readBinaryWatch = require('./../main/readBinaryWatch.js');
 //      For example, the above binary watch reads "3:25".
 //      Given a non-negative integer n which represents the number of LEDs that are currently on, return all possible times the watch could represent.
 
-describe('偶数と奇数が昇順になるように配列を返却する', () => {
+describe('引数の数を指定して時計が表示する可能性のあるもの全て配列になるように配列を返却する', () => {
 
     describe('readBinaryWatch(number n)  を実行するとき', () => {
         test('n = 1を引数に[1:00, 2:00, 4:00, 8:00, 0:01, 0:02, 0:04, 0:08, 0:16, 0:32]が返却されること', () => {
