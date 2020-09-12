@@ -2,7 +2,7 @@
  * @param {number} n
  * @return {number}
  */
-module.exports = arrangeCoins = function (n) {
+module.exports = n => {
     if (!n) {
         return 0;
     };
