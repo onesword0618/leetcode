@@ -3,11 +3,13 @@
  * @return {number}
  */
 module.exports = maxScore = function (s) {
-    let zero = 0, one = [...s.matchAll(/1/g)].length, res = 0;
-
-    for (let i = 0; i + 1 < s.length; i++) {
-        s[i] === "0" ? zero++ : one--;
-        res = Math.max(zero + one, res);
+    let score = 0;
+    let arr = s.split("").map(str => Number(str));
+    for (let i = 1; i < s.length; i++) arr[i] += arr[i - 1];
+    for (let i = 0; i < arr.length - 1; i++) {
+        let numOf0s = (i + 1 - arr[i]);
+        let numOf1s = (arr[arr.length - 1] - arr[i]);
+        score = Math.max(score, numOf0s + numOf1s);
     }
-    return res;
+    return score;
 };
