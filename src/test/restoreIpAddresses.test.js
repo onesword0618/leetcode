@@ -15,8 +15,8 @@ describe('IPアドレスを復元した結果を返却する', () => {
        expect(restoreIpAddresses('0000')).toEqual(expect.arrayContaining(['0.0.0.0']));
       });
 
-      test('s = 25525511135を入力して["1.1.1.1]が返却されること', () => {
-       expect(restoreIpAddresses('25525511135')).toEqual(expect.arrayContaining(['1.1.1.1']));
+      test('s = 1111を入力して["1.1.1.1"]が返却されること', () => {
+       expect(restoreIpAddresses('1111')).toEqual(expect.arrayContaining(['1.1.1.1']));
       });
 
       test('s = 010010を入力して[0.10.0.10,0.100.1.0]が返却されること', () => {
