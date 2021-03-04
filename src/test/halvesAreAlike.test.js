@@ -7,18 +7,18 @@ const halvesAreAlike = require('./../main/halvesAreAlike');
 describe('与えられた文字列を半分にした場合に類似かどうかを返却する', () => {
 
     test('bookを渡してtrueが返却される', () => {
-        expect(halvesAreAlike('book')).toBeTruthy;
+        expect(halvesAreAlike('book')).toBeTruthy();
     });
 
     test('textbookを渡してfalseが返却される', () => {
-        expect(halvesAreAlike('textbook')).toBeFalsy;
+        expect(halvesAreAlike('textbook')).toBeFalsy();
     });
 
    test('MerryChristmasを渡してfalseが返却される',() => {
-        expect(halvesAreAlike('MerryChristmas')).toBeFalsy;
+        expect(halvesAreAlike('MerryChristmas')).toBeFalsy();
    });
 
    test('AbCdEfGhを渡してtrueが返却される',() => {
-       expect(halvesAreAlike('AbCdEfGh')).toBeTruthy;
+       expect(halvesAreAlike('AbCdEfGh')).toBeTruthy();
    });
 });
