@@ -3,6 +3,6 @@
  * @return {string}
  */
 const defangIPaddr = function (address) {
-    return address.split('.').join('[.]');
+  return address.split(".").join("[.]");
 };
 module.exports = defangIPaddr;

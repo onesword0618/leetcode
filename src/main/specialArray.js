@@ -3,10 +3,10 @@
  * @return {number}
  */
 module.exports = specialArray = function (nums) {
-    nums.sort((a, b) => a - b);
-    for (let i = 1, j = 0; i <= nums.length; i++) {
-        while (nums[j] < i) j++;
-        if (i === nums.length - j) return i;
-    }
-    return -1;
+  nums.sort((a, b) => a - b);
+  for (let i = 1, j = 0; i <= nums.length; i++) {
+    while (nums[j] < i) j++;
+    if (i === nums.length - j) return i;
+  }
+  return -1;
 };

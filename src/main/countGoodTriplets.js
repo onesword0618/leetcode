@@ -6,21 +6,21 @@
  * @return {number}
  */
 module.exports = countGoodTriplets = function (arr, a, b, c) {
-    let count = 0;
+  let count = 0;
 
-    for (let i = 0; i < arr.length; i++) {
-        for (let j = i + 1; j < arr.length; j++) {
-            for (let k = j + 1; k < arr.length; k++) {
-                const conditions = [
-                    Math.abs(arr[i] - arr[j]) <= a,
-                    Math.abs(arr[j] - arr[k]) <= b,
-                    Math.abs(arr[i] - arr[k]) <= c,
-                ];
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = i + 1; j < arr.length; j++) {
+      for (let k = j + 1; k < arr.length; k++) {
+        const conditions = [
+          Math.abs(arr[i] - arr[j]) <= a,
+          Math.abs(arr[j] - arr[k]) <= b,
+          Math.abs(arr[i] - arr[k]) <= c,
+        ];
 
-                if (conditions.indexOf(false) === -1) count++;
-            }
-        }
+        if (conditions.indexOf(false) === -1) count++;
+      }
     }
+  }
 
-    return count;
+  return count;
 };

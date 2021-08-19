@@ -4,14 +4,12 @@
  * @return {boolean}
  */
 module.exports = (s, t) => {
+  let newS = s;
 
-    let newS = s;
-
-    for (let char of t) {
-
-        if (newS[0] === char) {
-            newS = newS.slice(1);
-        };
-    };
-    return !newS.length;
+  for (let char of t) {
+    if (newS[0] === char) {
+      newS = newS.slice(1);
+    }
+  }
+  return !newS.length;
 };

@@ -1,4 +1,4 @@
-const sortString = require('./../main/sortString.js');
+const sortString = require("./../main/sortString.js");
 //   Question
 //      Given a string s.You should re - order the string using the following algorithm:
 //      1. Pick the smallest character from s and append it to the result.
@@ -11,28 +11,26 @@ const sortString = require('./../main/sortString.js');
 //      In each step, If the smallest or the largest character appears more than once you can choose any occurrence and append it to the result.
 //      Return the result string after sorting s with this algorithm.
 
-describe('引数の文字列をアルゴリズムをもとにソートした結果の文字列を返却する', () => {
-
-    describe('sortString(String)が実行されたとき', () => {
-
-        test('String = aaaabbbbccccの場合、abccbaabccbaが返却されること', () => {
-            expect(sortString('aaaabbbbcccc')).toBe('abccbaabccba');
-        });
-
-        test('String = ratの場合、artが返却されること', () => {
-            expect(sortString('rat')).toBe('art');
-        });
-
-        test('String = leetcodeの場合、cdeloteeが返却されること', () => {
-            expect(sortString('leetcode')).toBe('cdelotee');
-        });
-
-        test('String = gggggggの場合、gggggggが返却されること', () => {
-            expect(sortString('ggggggg')).toBe('ggggggg');
-        });
-
-        test('String = spoの場合、opsが返却されること', () => {
-            expect(sortString('spo')).toBe('ops');
-        });
+describe("引数の文字列をアルゴリズムをもとにソートした結果の文字列を返却する", () => {
+  describe("sortString(String)が実行されたとき", () => {
+    test("String = aaaabbbbccccの場合、abccbaabccbaが返却されること", () => {
+      expect(sortString("aaaabbbbcccc")).toBe("abccbaabccba");
     });
+
+    test("String = ratの場合、artが返却されること", () => {
+      expect(sortString("rat")).toBe("art");
+    });
+
+    test("String = leetcodeの場合、cdeloteeが返却されること", () => {
+      expect(sortString("leetcode")).toBe("cdelotee");
+    });
+
+    test("String = gggggggの場合、gggggggが返却されること", () => {
+      expect(sortString("ggggggg")).toBe("ggggggg");
+    });
+
+    test("String = spoの場合、opsが返却されること", () => {
+      expect(sortString("spo")).toBe("ops");
+    });
+  });
 });

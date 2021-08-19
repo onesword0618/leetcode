@@ -1,4 +1,4 @@
-const toGoatLatin = require('./../main/toGoatLatin.js');
+const toGoatLatin = require("./../main/toGoatLatin.js");
 //      Question
 //         A sentence S is given, composed of words separated by spaces.
 //         Each word consists of lowercase and uppercase letters only.
@@ -15,16 +15,18 @@ const toGoatLatin = require('./../main/toGoatLatin.js');
 //         For example, the first word gets "a" added to the end, the second word gets "aa" added to the end and so on.
 //         Return the final sentence representing the conversion from S to Goat Latin.
 
-describe('引数の文字列をあるルールに従って変換bをした結果を返却する', () => {
-
-    describe('toGoatLatin(string S) を実行するとき', () => {
-
-        test('S = I speak Goat Latin を入力してImaa peaksmaaa oatGmaaaa atinLmaaaaaが返却されること', () => {
-            expect(toGoatLatin('I speak Goat Latin')).toBe('Imaa peaksmaaa oatGmaaaa atinLmaaaaa');
-        });
-
-        test('S = The quick brown fox jumped over the lazy dog を入力してheTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaaが返却されること', () => {
-            expect(toGoatLatin('The quick brown fox jumped over the lazy dog')).toBe('heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa');
-        });
+describe("引数の文字列をあるルールに従って変換bをした結果を返却する", () => {
+  describe("toGoatLatin(string S) を実行するとき", () => {
+    test("S = I speak Goat Latin を入力してImaa peaksmaaa oatGmaaaa atinLmaaaaaが返却されること", () => {
+      expect(toGoatLatin("I speak Goat Latin")).toBe(
+        "Imaa peaksmaaa oatGmaaaa atinLmaaaaa"
+      );
     });
+
+    test("S = The quick brown fox jumped over the lazy dog を入力してheTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaaが返却されること", () => {
+      expect(toGoatLatin("The quick brown fox jumped over the lazy dog")).toBe(
+        "heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa"
+      );
+    });
+  });
 });

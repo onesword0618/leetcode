@@ -1,4 +1,4 @@
-const countStudents = require('./../main/countStudents.js');
+const countStudents = require("./../main/countStudents.js");
 //    Question
 //       The school cafeteria offers circular and square sandwiches at lunch break, referred to by numbers 0 and 1 respectively. All students stand in a queue. Each student either prefers square or circular sandwiches.
 //       The number of sandwiches in the cafeteria is equal to the number of students. The sandwiches are placed in a stack. At each step:
@@ -7,14 +7,14 @@ const countStudents = require('./../main/countStudents.js');
 //       This continues until none of the queue students want to take the top sandwich and are thus unable to eat.
 //       You are given two integer arrays students and sandwiches where sandwiches[i] is the type of the i​​​​​​th sandwich in the stack (i = 0 is the top of the stack) and students[j] is the preference of the j​​​​​​th student in the initial queue (j = 0 is the front of the queue). Return the number of students that are unable to eat.
 
-describe('昼食が食べられない生徒の数を返却する', () => {
-    describe('countStudents(number[] students number[] sandwiches)  を実行するとき', () => {
-        test('[1,1,0,0],[0,1,0,1]を引数に0が返却されること', () => {
-            expect(countStudents([1,1,0,0],[0,1,0,1])).toBe(0);
-        });
-
-        test('[1,1,1,0,0,1],[1,0,0,0,1,1]を引数に3が返却されること', () => {
-            expect(countStudents([1,1,1,0,0,1],[1,0,0,0,1,1])).toBe(3);
-        });
+describe("昼食が食べられない生徒の数を返却する", () => {
+  describe("countStudents(number[] students number[] sandwiches)  を実行するとき", () => {
+    test("[1,1,0,0],[0,1,0,1]を引数に0が返却されること", () => {
+      expect(countStudents([1, 1, 0, 0], [0, 1, 0, 1])).toBe(0);
     });
+
+    test("[1,1,1,0,0,1],[1,0,0,0,1,1]を引数に3が返却されること", () => {
+      expect(countStudents([1, 1, 1, 0, 0, 1], [1, 0, 0, 0, 1, 1])).toBe(3);
+    });
+  });
 });

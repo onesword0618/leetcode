@@ -4,11 +4,11 @@
  * @return {number}
  */
 module.exports = (arr, k) => {
-    for (let i = 1, j = 0; ; i++) {
-        if (i === arr[j]) {
-            j++;
-        } else if (k === i - j) {
-            return i;
-        }
+  for (let i = 1, j = 0; ; i++) {
+    if (i === arr[j]) {
+      j++;
+    } else if (k === i - j) {
+      return i;
     }
+  }
 };
