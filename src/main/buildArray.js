@@ -4,14 +4,15 @@
  * @return {string[]}
  */
 module.exports = (target, n) => {
-    let res = [], j = 1;
-    for (let i = 0; i < target.length; i++) {
-        if (target[i] === j) res.push("Push");
-        else {
-            res.push("Push", "Pop");
-            i--;
-        }
-        j++;
+  let res = [],
+    j = 1;
+  for (let i = 0; i < target.length; i++) {
+    if (target[i] === j) res.push("Push");
+    else {
+      res.push("Push", "Pop");
+      i--;
     }
-    return res;
+    j++;
+  }
+  return res;
 };

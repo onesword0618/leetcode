@@ -3,14 +3,14 @@
  * @param {character} target
  * @return {character}
  */
-module.exports = nextGreatestLetter = function(letters, target) {
-    if (target >= letters[letters.length - 1]) {
-        return letters[0];
-    };
+module.exports = nextGreatestLetter = function (letters, target) {
+  if (target >= letters[letters.length - 1]) {
+    return letters[0];
+  }
 
-    for (let i = 0; i < letters.length; i++) {
-        if (target < letters[i]) {
-            return letters[i];
-        };
-    };
+  for (let i = 0; i < letters.length; i++) {
+    if (target < letters[i]) {
+      return letters[i];
+    }
+  }
 };

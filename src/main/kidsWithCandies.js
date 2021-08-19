@@ -4,6 +4,6 @@
  * @return {boolean[]}
  */
 module.exports = (candies, extraCandies) => {
-    const max = Math.max(...candies);
-    return candies.map(candy => candy + extraCandies >= max);
+  const max = Math.max(...candies);
+  return candies.map((candy) => candy + extraCandies >= max);
 };

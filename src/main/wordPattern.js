@@ -3,25 +3,24 @@
  * @param {string} str
  * @return {boolean}
  */
-const wordPattern = function(pattern, str) {
+const wordPattern = function (pattern, str) {
+  let letter = str.split(" ");
+  let patternSplit = pattern.split("");
 
-    let letter = str.split(' ');
-    let patternSplit = pattern.split('');
+  if (letter.length !== patternSplit.length) {
+    return false;
+  }
 
-    if (letter.length !== patternSplit.length) {
-        return false;
-    };
+  if (new Set(letter).size !== new Set(patternSplit).size) {
+    return false;
+  }
 
-    if (new Set(letter).size !== new Set(patternSplit).size) {
-        return false;
-    };
+  let obj = {};
 
-    let obj = {};
+  patternSplit.forEach((p, i) => {
+    obj[p] = letter[i];
+  });
 
-    patternSplit.forEach((p, i) => {
-        obj[p] = letter[i];
-    });
-
-    return patternSplit.map(p => obj[p]).join(' ') === letter.join(' ');
+  return patternSplit.map((p) => obj[p]).join(" ") === letter.join(" ");
 };
 module.exports = wordPattern;

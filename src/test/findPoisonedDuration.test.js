@@ -1,4 +1,4 @@
-const findPoisonedDuration = require('./../main/findPoisonedDuration');
+const findPoisonedDuration = require("./../main/findPoisonedDuration");
 //   Question
 //      Our hero Teemo is attacking an enemy Ashe with poison attacks! When Teemo attacks Ashe,
 //      Ashe gets poisoned for a exactly duration seconds.
@@ -7,14 +7,14 @@ const findPoisonedDuration = require('./../main/findPoisonedDuration');
 //      You are given a non-decreasing integer array timeSeries, where timeSeries[i] denotes that Teemo attacks Ashe at second timeSeries[i], and an integer duration.
 //      Return the total number of seconds that Ashe is poisoned.
 
-describe('英雄が毒を受けている時間の結果を返却する', () => {
-   describe('findPoisonedDuration (number[] timeSeries,number duration) を実行するとき', () => {
-      test('timeSeries = [1,4], duration = 2を入力して4が返却されること', () => {
-         expect(findPoisonedDuration([1,4],2)).toBe(4);
-      });
+describe("英雄が毒を受けている時間の結果を返却する", () => {
+  describe("findPoisonedDuration (number[] timeSeries,number duration) を実行するとき", () => {
+    test("timeSeries = [1,4], duration = 2を入力して4が返却されること", () => {
+      expect(findPoisonedDuration([1, 4], 2)).toBe(4);
+    });
 
-      test('timeSeries = [1,2], duration = 2を入力して3が返却されること', () => {
-         expect(findPoisonedDuration([1,2],2)).toBe(3);
-      });
-   });
+    test("timeSeries = [1,2], duration = 2を入力して3が返却されること", () => {
+      expect(findPoisonedDuration([1, 2], 2)).toBe(3);
+    });
+  });
 });

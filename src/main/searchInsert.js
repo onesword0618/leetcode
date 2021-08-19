@@ -4,5 +4,5 @@
  * @return {number}
  */
 module.exports = (nums, target) => {
-    return nums.filter(n => n < target).length;
+  return nums.filter((n) => n < target).length;
 };

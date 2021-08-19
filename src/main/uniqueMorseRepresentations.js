@@ -2,21 +2,48 @@
  * @param {string[]} words
  * @return {number}
  */
-module.exports = words => {
-    const result = [];
-    const codes = [".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."];
+module.exports = (words) => {
+  const result = [];
+  const codes = [
+    ".-",
+    "-...",
+    "-.-.",
+    "-..",
+    ".",
+    "..-.",
+    "--.",
+    "....",
+    "..",
+    ".---",
+    "-.-",
+    ".-..",
+    "--",
+    "-.",
+    "---",
+    ".--.",
+    "--.-",
+    ".-.",
+    "...",
+    "-",
+    "..-",
+    "...-",
+    ".--",
+    "-..-",
+    "-.--",
+    "--..",
+  ];
 
-    words.forEach(word => {
-        let str = '';
+  words.forEach((word) => {
+    let str = "";
 
-        for (let i = 0; i < word.length; i++) {
-            const code = word[i].charCodeAt(0) - 97;
-            str += codes[code];
-        };
+    for (let i = 0; i < word.length; i++) {
+      const code = word[i].charCodeAt(0) - 97;
+      str += codes[code];
+    }
 
-        if (!result.find(v => v === str)) {
-            result.push(str);
-        };
-    });
-    return result.length;
+    if (!result.find((v) => v === str)) {
+      result.push(str);
+    }
+  });
+  return result.length;
 };

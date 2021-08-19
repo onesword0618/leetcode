@@ -1,4 +1,4 @@
-const tictactoe = require('./../main/tictactoe.js');
+const tictactoe = require("./../main/tictactoe.js");
 //      Question
 //           Tic-tac-toe is played by two players A and B on a 3 x 3 grid.
 //           Here are the rules of Tic-Tac-Toe:
@@ -13,50 +13,56 @@ const tictactoe = require('./../main/tictactoe.js');
 //           Return the winner of the game if it exists (A or B), in case the game ends in a draw return "Draw", if there are still movements to play return "Pending".
 //           You can assume that moves is valid (It follows the rules of Tic-Tac-Toe), the grid is initially empty and A will play first.
 
-describe('三目並べの勝負を行った結果を返却する', () => {
-
-    describe('tictactoe(number[][] moves) を実行するとき', () => {
-
-        test('moves =  [[0,0],[2,0],[1,1],[2,1],[2,2]] を入力してAが返却されること', () => {
-            expect(tictactoe([
-                [0, 0],
-                [2, 0],
-                [1, 1],
-                [2, 1],
-                [2, 2]
-            ])).toBe('A');
-        });
-
-        test('moves =  [[0,0],[1,1],[0,1],[0,2],[1,0],[2,0]] を入力してBが返却されること', () => {
-            expect(tictactoe([
-                [0, 0],
-                [1, 1],
-                [0, 1],
-                [0, 2],
-                [1, 0],
-                [2, 0],
-            ])).toBe('B');
-        });
-
-        test('moves =  [[0,0],[1,1],[2,0],[1,0],[1,2],[2,1],[0,1],[0,2],[2,2]] を入力してDrawが返却されること', () => {
-            expect(tictactoe([
-                [0, 0],
-                [1, 1],
-                [2, 0],
-                [1, 0],
-                [1, 2],
-                [2, 1],
-                [0, 1],
-                [0, 2],
-                [2, 2]
-            ])).toBe('Draw');
-        });
-
-        test('moves = [[0,0],[1,1]] を入力してPendingが返却されること', () => {
-            expect(tictactoe([
-                [0, 0],
-                [1, 1]
-            ])).toBe('Pending');
-        });
+describe("三目並べの勝負を行った結果を返却する", () => {
+  describe("tictactoe(number[][] moves) を実行するとき", () => {
+    test("moves =  [[0,0],[2,0],[1,1],[2,1],[2,2]] を入力してAが返却されること", () => {
+      expect(
+        tictactoe([
+          [0, 0],
+          [2, 0],
+          [1, 1],
+          [2, 1],
+          [2, 2],
+        ])
+      ).toBe("A");
     });
+
+    test("moves =  [[0,0],[1,1],[0,1],[0,2],[1,0],[2,0]] を入力してBが返却されること", () => {
+      expect(
+        tictactoe([
+          [0, 0],
+          [1, 1],
+          [0, 1],
+          [0, 2],
+          [1, 0],
+          [2, 0],
+        ])
+      ).toBe("B");
+    });
+
+    test("moves =  [[0,0],[1,1],[2,0],[1,0],[1,2],[2,1],[0,1],[0,2],[2,2]] を入力してDrawが返却されること", () => {
+      expect(
+        tictactoe([
+          [0, 0],
+          [1, 1],
+          [2, 0],
+          [1, 0],
+          [1, 2],
+          [2, 1],
+          [0, 1],
+          [0, 2],
+          [2, 2],
+        ])
+      ).toBe("Draw");
+    });
+
+    test("moves = [[0,0],[1,1]] を入力してPendingが返却されること", () => {
+      expect(
+        tictactoe([
+          [0, 0],
+          [1, 1],
+        ])
+      ).toBe("Pending");
+    });
+  });
 });
