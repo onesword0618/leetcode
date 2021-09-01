@@ -1,17 +1,13 @@
-# JavaScript のリポジトリに対してのgithubAcrions
 name: Node.js CI
-# 実行タイミング
 on:
   push:
     branches: [master]
   pull_request:
     branches: [master]
-# 実行ジョブ
 jobs:
   build:
     name: build
     runs-on: ubuntu-latest
-    # バージョンを変えながら実行する
     strategy:
       matrix:
         node-version: [10.x, 12.x]
@@ -25,7 +21,6 @@ jobs:
       - run: npm ci
       - run: npm run build --if-present
       - run: npm test
-    # 環境変数
     env:
       CI: true
       TZ: Asia/Tokyo
