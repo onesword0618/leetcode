@@ -11,6 +11,8 @@ leetcode で利用したコードを置いておく。
 ![GitHub language count](https://img.shields.io/github/languages/count/onesword0618/leetcode?style=plastic)
 ![GitHub last commit](https://img.shields.io/github/last-commit/onesword0618/leetcode?style=plastic)
 
+[![Leet Code](https://img.shields.io/badge/leetcode-333333?logo=leetcode&logoColor=FFA116)](https://leetcode.com/)
+
 [![JavaScript](https://img.shields.io/badge/JavaScript-333333?logo=javascript&logoColor=F7DF1E)](https://www.ecma-international.org/)
 [![Nodejs](https://img.shields.io/badge/Node.js-333333?logo=node.js&logoColor=43853D)](https://nodejs.org/en/about/)
 
