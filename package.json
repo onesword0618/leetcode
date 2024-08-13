@@ -21,10 +21,10 @@
   },
   "homepage": "https://github.com/onesword0618/leetcode#readme",
   "devDependencies": {
-    "jest": "^27.5.1",
-    "npm-check-updates": "^12.5.4"
+    "jest": "^29.7.0",
+    "npm-check-updates": "17.0.6"
   },
   "dependencies": {
-    "minimist": "^1.2.6"
+    "minimist": "1.2.8"
   }
 }
